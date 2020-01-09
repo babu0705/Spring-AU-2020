@@ -1,0 +1,273 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+body {margin:0;}
+html{
+  scroll-behavior: smooth;
+}
+* {box-sizing: border-box}
+
+.container {
+  width: 50%;
+  background-color: #ddd;
+  margin-left: 25%;
+  align-items: center;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 70%; background-color: #4CAF50;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 85%; background-color: #f44336;}
+.php {width: 75%; background-color: #808080;}
+.split {
+    height: 100%;
+    position: absolute;
+}
+
+.left {
+
+  left: 0;
+  width: 15%;
+  background-image: url("background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.right {
+  right: 0;
+  width: 85%;
+  background-color:rgb(235, 173, 103);
+}
+.centered {
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+}
+.rightcentered {
+
+text-align: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(48, 46, 47);
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 50px;
+  
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+</style>
+</head>
+<body>
+<div style="position: fixed;z-index: 1;">
+<ul>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#project">Project</a></li>
+  <li><a href="#technicalskills">Technical Skills</a></li>
+  <li><a class="active" href="#">About Me</a></li>
+</ul>
+</div>
+<div id="About" style="position:relative;top:50;height: 600px;">
+<div class="split left">
+    <div class="centered">
+      <img  style="border-radius:90%; height: 200px;" src="babu.jpg" alt="mypic">
+    </div>
+  </div>
+  
+  <div class="split right">
+    <div class="rightcentered">
+      
+        <h2>About Me</h2>
+            <p style="font-size: small;">My name is BABUVIGNESH C. I was born in Bangalore.
+            Some of my favorite things I enjoy immensely and indulge in are reading, 
+            listen to music, collecting coins and stamps.
+            My career aspirations is to reach the best satisfactory position in the organization I join first.
+            I have been told that I am a charming, kind, attitude-prone 
+            person". I look up mostly to my family members, as a guiding figure in life. 
+            I like watching new movies and going for long drives alone  <br> <br> <br></p>
+
+              <h2>Interests</h2>
+              <span >Drawing ,</span>
+              <span>Photography ,</span>
+              <span>Programming ,</span>
+              <span>Being Updated on Current Trends</span>
+              <br><br><br>
+            <h2>Favorite Places by City</h2>
+            <table border="1" align="center"> 
+              <div style="background-color: skyblue;">
+                <tr>
+                    <th>Coimbatore</th>
+                    <th>Chennai</th>
+                    <th>Bangalore</th>
+                </tr>
+                <tr>
+                    <td>Isha Yoga(Temple)</td>
+                    <td>Marina Beach</td>
+                    <td>Cubbon Park</td>
+                    
+                    
+                    
+                </tr>
+                <tr>
+                    <td>Valparai (Hill Station)</td>
+                    <td>Forum Mall</td>
+                    <td>Banarkata Zoo</td>
+                </tr>
+                <tr>
+                    <td>Siruvani</td>
+                    <td>VGP (Theme Park)</td>
+                    <td>Nandi Hills</td>
+                <tr>
+            </table>     
+    </div>
+  </div>
+</div>
+<div id="technicalskills" style="height:600px;position: relative;padding-top: 50;background-color: rgb(255, 148, 250);">
+  <h1 style="text-align: center;">My Skills</h1>
+<div></div>
+<p>HTML</p>
+<div class="container">
+  <div class="skills html">70%</div>
+</div>
+
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">85%</div>
+</div>
+
+<p>PHP</p>
+<div class="container">
+  <div class="skills php">75%</div>
+</div>
+</div>
+<div id="project" style="height:700px;position: relative;padding-top: 50; background-image: url(background2.jpeg); background-size: cover;">
+  <div id="project1">
+    <h1 style="text-align: center;">Projects</h1>
+    <h2>Project 1</h2>
+  <h3>Pothole Detection Using Image Processing:</h3>
+  <p>Automated Pothole Detection using image processing of burst images captured, processed using machine learning
+     and dimensions of it are calculated using disparity map and pixel variation</p><br><br><br><br>
+</div>
+  <div id="project2">
+    <h2>Project 2</h2>
+    <h3> Electric Vehicle Blockchain based participation Scheme</h3>
+    <p>A Blockchain based project to locate and book appointment for electric vechicle charging using a designated hardware connected to battery of EV which has a gps.</p>
+</div>
+</div>
+<div id="contact" style="height:700px;position: relative;padding-top: 50;">
+  <h3 style="text-align: center;">Contact Form</h3>
+
+<div class="container">
+  <form style="text-align: center;">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="india">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+    <a href="https://www.facebook.com/babuvignesh07" class="fa fa-facebook"></a><span>babuvignesh07</span>
+    <a href="https://www.linkedin.com/in/babu-vignesh-c-67235812b/" class="fa fa-linkedin"></a><span>Babuvignesh C</span>
+    <a href="skype:live:babuvignesh.c?chat" class="fa fa-skype"></a><span>Babuvignesh C</span>
+   
+
+</div>
+</div>
+</body>
+</html>
