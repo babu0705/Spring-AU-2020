@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .mainclass {
+        display: flex;
+       
+      }
+      body {
+        background-image: url(download.jfif);
+        background-repeat: no-repeat;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      .mainbar {
+        border: 1px solid black;
+        width: 500px;
+      }
+
+      .progressbar {
+        width: 500px;
+        height: 30px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+      }
+
+      /* Standard syntax */
+      @keyframes example {
+        0% {
+          background-color: black;
+          width: 15%;
+        }
+        15% {
+          background-color: rgb(46, 46, 33);
+          width: 30%;
+        }
+        30% {
+          background-color: yellow;
+          width: 45%;
+        }
+        45% {
+          background-color: rgb(121, 202, 207);
+          width: 60%;
+        }
+
+        60% {
+          background-color: blue;
+          width: 75%;
+        }
+        70% {
+          background-color: rgb(14, 154, 219);
+          width: 85%;
+        }
+
+        100% {
+          background-color: rgb(192, 104, 22);
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainclass">
+      <span>0%</span>
+
+      <div class="mainbar">
+        <div class="progressbar"></div>
+      </div>
+      <span>100%</span>
+    </div>
+  </body>
+</html>
