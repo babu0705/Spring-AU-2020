@@ -1,0 +1,165 @@
+<html>
+  <head>
+    <title>
+      user info page
+    </title>
+
+    <script>
+      function sort() {
+        var ul = document.getElementById("sortlist");
+
+        var li = ul.getElementsByTagName("li");
+
+        var array = new Array();
+
+        for (var i = 0; i < li.length; i++) {
+          array.push(li[i].innerText);
+        }
+
+        var array1 = new Array();
+
+        array1 = array.sort();
+
+        for (var i = 0; i < li.length; i++) {
+          li[i].innerText = array1[i];
+        }
+      }
+
+      function suggest() {
+        var ul = document.getElementById("usernamelist");
+
+        var li1 = ul.getElementsByTagName("li");
+
+        var username = document.getElementById("username").value;
+
+        var array = ["user1008", "starwars999", "jack_109", "anishpb"];
+
+        var regex = new RegExp(".*" + username + ".*");
+
+        console.log(regex);
+        var in_html = "<ul>";
+
+        for (var i = 0; i < array.length; i++) {
+          if (regex.test(array[i]) == true) {
+            in_html += "<li>" + array[i] + "</li>";
+            console.log(li1[i]);
+          }
+        }
+
+        in_html += "</ul>";
+        console.log(in_html);
+
+        ul.innerHTML = in_html;
+      }
+    </script>
+
+    <style>
+              body{
+                  background-color: burlywood;
+              }
+              .info
+
+              {
+                  padding-left: 200px;
+                  width: 50%;
+                  height: 500px;
+                  padding-top: 60px;
+      }
+
+              }
+
+              input
+
+              {
+
+                  float: right;
+
+                  padding-top: 5px;
+
+              }
+
+              select{
+
+                  float: right;
+
+                  padding-top: 5px;
+
+
+
+              }
+
+              span{
+
+                  padding-top: 5px;
+
+
+
+              }
+    </style>
+  </head>
+
+  <body>
+    <div class="info">
+      <span>Name&nbsp;&nbsp;&nbsp;:</span>
+
+      <input id="name" type="text" /><br /><br /><br />
+
+      <span>Country&nbsp;&nbsp;&nbsp;:</span>
+
+      <select id="Country">
+        <option value="Mumbai">Mumbai</option>
+
+        <option value="Delhi" selected="selected">Delhi</option>
+
+        <option value="hyderabad">Hyderabad</option>
+      </select>
+      <br /><br /><br />
+
+      <span>Username&nbsp;&nbsp;&nbsp;:</span>
+
+      <input type="text" id="username" onkeyup="suggest()" />
+
+      <br /><br /><br />
+
+      <div
+        id="usernamelist"
+        style="float:right;width:inherit;border-radius: 40px;  border: 0.5px solid black;"
+      >
+        <ul id="namelist">
+          <li>user1008</li>
+
+          <li>starwars999</li>
+
+          <li>jack_109</li>
+
+          <li>anishpb</li>
+        </ul>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br />
+
+      <button
+        id="sort"
+        style="color: black;background-color: aquamarine;width:100px;height: 40px;border-radius: 30px;"
+        onclick="sort()"
+      >
+        Sort
+      </button>
+
+      <div
+        id="sortlist"
+        style="float:right;width:inherit;border-radius: 40px;border: 0.5px solid black;"
+      >
+        <ul id="sort_list">
+          <li>carrot</li>
+
+          <li>banana</li>
+
+          <li>apple</li>
+
+          <li>kiwi</li>
+        </ul>
+      </div>
+      <br /><br /><br />
+    </div>
+  </body>
+</html>
