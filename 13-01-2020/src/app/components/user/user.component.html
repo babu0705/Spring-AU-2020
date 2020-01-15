@@ -1,0 +1,62 @@
+<!-- <li *ngFor="let value of data">
+  <p> FirstName: {{ value.firstName }} </p>  
+  <p> LastName:  {{ value.lastName }}</p>
+  <p> Address</p>
+  <p> street:  {{ value.address.street }}</p>
+  <p> city:  {{ value.address.city }}</p>
+  <p> state:  {{ value.address.state }}</p>
+  <p> zipcode:  {{ value.address.zip }}</p>
+  </li> -->
+
+  <!-- <table style="border: 1px solid black;  border-collapse: collapse;">
+
+        <tbody style="border: 1px solid black;">
+            <tr style="border: 1px solid black;">
+                <th style="border: 1px solid black;">Firstname</th>
+                <th style="border: 1px solid black;">Lastname</th> 
+                <th style="border: 1px solid black;">Street</th>
+                <th style="border: 1px solid black;">City</th>
+                <th style="border: 1px solid black;">State</th> 
+                <th style="border: 1px solid black;">ZipCode</th>
+              </tr>
+    <tbody style="border: 1px solid black;">
+    <tr *ngFor="let value of data">
+    <td style="border: 1px solid black;">  {{ value.firstName }} </td>  
+    <td style="border: 1px solid black;">  {{ value.lastName }}</td>
+    <td style="border: 1px solid black;"> {{ value.address.street }}</td>
+    <td style="border: 1px solid black;">  {{ value.address.city }}</td>
+    <td style="border: 1px solid black;" >  {{ value.address.state }}</td>
+    <td style="border: 1px solid black;"> {{ value.address.zip }}</td>
+</tr>
+</tbody>
+</table> -->
+
+<table style="border: 1px solid black;  border-collapse: collapse;">
+
+    <tbody style="border: 1px solid black;">
+        <tr style="border: 1px solid black;">
+            <th style="border: 1px solid black;">Firstname</th>
+            <th style="border: 1px solid black;">Lastname</th> 
+            <th style="border: 1px solid black;">Email</th>
+            <th style="border: 1px solid black;">Contact</th> 
+            <th style="border: 1px solid black;">Street</th>
+            <th style="border: 1px solid black;">City</th>
+            <th style="border: 1px solid black;">State</th> 
+            <th style="border: 1px solid black;">ZipCode</th>
+            <th style="border: 1px solid black;"></th>
+          </tr>
+<tr *ngFor="let value of data">
+    <td style="border: 1px solid black;">  {{ value.firstName }} </td>  
+    <td style="border: 1px solid black;">  {{ value.lastName }}</td>
+    <td style="border: 1px solid black;">  {{ value.email }} </td>  
+    <td style="border: 1px solid black;">  {{ value.Contact }}</td>
+    <td style="border: 1px solid black;"> {{ value.address.street }}</td>
+    <td style="border: 1px solid black;">  {{ value.address.city }}</td>
+    <td style="border: 1px solid black;" >  {{ value.address.state }}</td>
+    <td style="border: 1px solid black;"> {{ value.address.zip }}</td>
+    <td style="border: 1px solid black;"><button (click)="delete(value)" >Delete</button>
+    </td>
+
+</tr>
+</tbody>
+</table>
