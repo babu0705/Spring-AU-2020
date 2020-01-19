@@ -1,0 +1,209 @@
+run:
+Enter your Name
+babu
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
+1
+Id	 Name	  Qty Avbl 	 Rate
+1	pen		5	50.0
+2	pencil		5	8.9
+3	eraser		5	5.0
+4	monitor		5	4000.0
+Enter Your Product Id to Add in your Cart (or) Press r key to Go back
+2
+
+ Item Added ...
+Id	 Name	  Qty Avbl 	 Rate
+1	pen		5	50.0
+2	pencil		5	8.9
+3	eraser		5	5.0
+4	monitor		5	4000.0
+Enter Your Product Id to Add in your Cart (or) Press r key to Go back
+3
+
+ Item Added ...
+Id	 Name	  Qty Avbl 	 Rate
+1	pen		5	50.0
+2	pencil		5	8.9
+3	eraser		5	5.0
+4	monitor		5	4000.0
+Enter Your Product Id to Add in your Cart (or) Press r key to Go back
+r
+
+
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
+3
+<-----------------Your Cart------------------->
+Items	Rates
+
+pencil	8
+eraser	5
+
+Total :13.9
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
+4
+
+Order ID : 1
+Items :
+pencil eraser 
+Total :13.9<-----------------Order Placed SucessFully------------------->
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
+5
+
+Order ID : 1
+Items :
+pencil eraser 
+Total :13.9
+Enter orderid to Delete
+1
+<-----------------Your Order Has Been Cancelled------------------->
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
+6
+Sorry No Order Placed Yet...
+
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
+3
+<-----------------Your Cart------------------->
+:( Sorry...No Items In Cart
+
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
+1
+Id	 Name	  Qty Avbl 	 Rate
+1	pen		5	50.0
+2	pencil		5	8.9
+3	eraser		5	5.0
+4	monitor		5	4000.0
+Enter Your Product Id to Add in your Cart (or) Press r key to Go back
+2
+
+ Item Added ...
+Id	 Name	  Qty Avbl 	 Rate
+1	pen		5	50.0
+2	pencil		5	8.9
+3	eraser		5	5.0
+4	monitor		5	4000.0
+Enter Your Product Id to Add in your Cart (or) Press r key to Go back
+r
+
+
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
+3
+<-----------------Your Cart------------------->
+Items	Rates
+
+pencil	8
+
+Total :8.9
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
+2
+Cart_items : pencil
+Enter Items Name to Delete
+pencil
+pencil
+
+:( Sorry...No Items In Cart
+
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
+3
+<-----------------Your Cart------------------->
+:( Sorry...No Items In Cart
+
+
+ 1)ADD CART 
+ 2)DELETE CART
+ 3)VIEW CART 
+ 4)PLACE ORDER
+ 5)CANCEL ORDER
+ 6)VIEW ORDER
+
+ Enter You Choice (or)Press e to exit
+
