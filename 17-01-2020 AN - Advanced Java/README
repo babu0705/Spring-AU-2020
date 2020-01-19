@@ -1,0 +1,5 @@
+Each folder has a src package file which can be directly copy pasted to run the java in eclipse. 
+
+Jdbc connectivity alone done in netbeans as eclipse need a seperate jar connector.
+
+Output screenshots kept inside the folders along with package src
