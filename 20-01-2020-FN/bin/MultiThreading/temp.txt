@@ -1,0 +1,48 @@
+
+public class Farmer implements Runnable{
+	public static String[] fruittypes= {"apple","orange","grape","watermelon"};
+	
+	@Override
+	public void run() {
+		
+		while(true)
+		{
+			Random r=new Random();
+			int randomNumber=r.nextInt(4);
+			int sum = 0;
+			for (int f : FruitMarket.inventory.values()) {
+			    sum += f;
+			}
+			synchronized (FruitMarket.fruit_inventory) {
+			
+		if(sum<10)
+			{
+			Integer count = FruitMarket.inventory.get(fruittypes[randomNumber]);
+			if (count == null) {
+				FruitMarket.inventory.put(fruittypes[randomNumber], 1);
+			}
+			else {
+				FruitMarket.inventory.put(fruittypes[randomNumber], count + 1);
+			}
+			System.out.println(Thread.currentThread().getName()+" Fruit Inventory "+FruitMarket.inventory);
+			FruitMarket.inventory.notify();
+			}
+			else
+			{
+				try
+					{
+						FruitMarket.inventory.wait();
+					}
+					catch(InterruptedException e)
+					{
+						System.out.println(e);
+					}
+					System.out.println("Market Full");
+				}
+			
+			
+		}
+		}
+	}
+
+}
